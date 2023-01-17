@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+nav h1{
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-size: 3vmax;
+    text-align: center;
+    padding-top: 0.5vmax;
+}
+nav .right{
+    width: 70%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+.page1 .rest{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.rest .black{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    
+}
+.rest .black h1{
+    width: 80%;
+    color: white;
+    margin-top: 25vmax;
+    /* margin-left: 14vmax; */
+    transform: translateX(14vmax);
+    z-index: 999;
+}
+.black span{
+    font-size: 4vmax;
+    letter-spacing: 0.5vmax;
+}
+.rest .black button{
+    width: 70%;
+    height: 10%;
+    background-color: yellow;
+    font-size: 1.5vmax;
+    /* margin-left: 14vmax; */
+    transform: translateX(14vmax);
+    cursor: pointer;
+}
+.rest .image {
+    width: 70%;
+    height: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: pointer;
+}
+.page2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    background-color: rgb(204, 198, 198);
+
+}
+.page2 .image1{
+    width: 40%;
+    height: 100%;
+}
+.image1 .img{
+    width: 60%;
+    height: 70%;
+    background-color: black;
+    margin-top: 5vmax;
+    margin-left: 5vmax;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 3vmax;
+    margin-left: 3vmax;
+    cursor: pointer;
+}
+.page2 .matter1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.matter1 p{
+    margin-top: 1vmax;
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page3 .heading{
+    width: 30%;
+    height: 5%;
+    text-align: center;
+}
+.page3 .nav1{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+.page3 .nav1 h3:hover{
+    color: blue;
+    border-bottom: 2px solid red;
+   }
+.page3 .imagebox{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+.page3 .imagebox img{
+    width: 25%;
+    height:25% ;
+    margin: 0.5vmax;
+    cursor: pointer;
+}
+ .last{
+    padding: 1vmax 2vmax;
+    font-size: 1.5vmax;
+    margin-left: 45%;
+    border-radius: 1.5vmax;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .page1{
+        height: 50%;
+    
+    }
+    nav{
+        width: 100%;
+        height: 20%;
+       flex-direction: column;
+    }
+    nav h1{
+        width: 100%;
+        height: 50%;
+       
+    }
+    nav .right{
+        width: 100%;
+        height: 50%;
+        }
+        nav .right h2{
+            font-size: 2.2vmax;
+        }
+    .page1 .rest{
+        height: 80%;
+        }
+   .rest .black h1{
+    width: 120%;
+        margin-top: 24vmax;
+        transform: translateX(7vmax);
+    }
+    .rest .black button{
+        width: 100%;
+        transform: translateX(10vmax);
+    }
+    .rest .black h1{
+        font-size: 2.7vmax;
+    }
+
+    .page2{
+        flex-direction: column;
+         }
+    .page2 .image1{
+        width: 90%;
+        height: 50%;
+    }
+    .image1 .img{
+        height: 90%;
+        margin-top: 2vmax;
+        margin-left: 10vmax;
+    }
+    
+    .page2 .matter1{
+        width: 90%;
+        height: 50%;
+        }
+    .page2 .matter1 p{
+        margin-left: 1vmax;
+        font-size: 1.5vmax;
+    }
+    .page3 .nav1{
+        width: 100%;
+       
+       }
+       .page3 .heading h1{
+            font-size: 3vmax;
+       }
+       .page3 .heading h6{
+           font-size: 1.2vmax;
+       }
+       .page3 .nav1 h3{
+        font-size: 1.7vmax;
+       
+       }
+       
+    }
